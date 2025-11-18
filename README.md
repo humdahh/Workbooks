@@ -13,30 +13,33 @@ A Tableau-based Emergency Room (ER) dashboard built using realistic, synthetic d
 
 ## Data
 
-- The dashboard uses realistic but synthetic (fake) data to protect privacy.
-- Typical fields included:
-  - `patient_id` (synthetic)
+This dashboard uses the following data source.
+
+- The dashboard uses real world fake data to protect privacy.
+- Primary source: 'Hospital ER.csv' 
+  Source: data.world
+  Time Period: April 2019 - October 2020
+- Key Variables:
+  - `patient_id`
   - `visit_datetime`
   - `age`
   - `gender`
   - `race`
   - `department_referred_to`
   - `wait_time_minutes`
-  - `satisfaction_score` (e.g., 1-5)
-  - `arrival_mode` (e.g., walk-in, ambulance)
+  - `satisfaction_score` (e.g., 1-10)
 
-*If you plan to connect real data, remove any personally identifiable information (PII) and follow applicable privacy regulations.*
-
-## Files
-
-- Place your Tableau workbook (`.twb` or `.twbx`) in the repository (example: `/workbook/ER_Dashboard.twbx` or `/docs/ER_Dashboard.twbx`).
-- Optionally include screenshots in `/docs/images/` (example: `docs/images/overview.png`, `docs/images/heatmap.png`).
 
 ## How to Open the Dashboard
 
-1. **Tableau Desktop or Tableau Reader**: Open the `.twbx` or `.twb` file directly.
-2. **Tableau Public**: If you publish the workbook there, link the Tableau Public URL in this README.
-3. **Static Previews**: View exported PNGs or PDF files located in `/docs/images` or `/docs/exports`.
+### Option 1: Download and Open
+- [Download ER Dashboard Workbook](workbook/ER_Dashboard.twb)
+- Open in Tableau Desktop
+
+### Option 2: View Screenshots
+- [Dashboard Overview](docs/images/DB%20Overview.png)
+- [View all dashboard screenshots](docs/images/)
+
 
 ## Usage / Notes
 
@@ -45,21 +48,12 @@ A Tableau-based Emergency Room (ER) dashboard built using realistic, synthetic d
 - The heat map uses weekday and hour to highlight peak demand windows—useful for staffing decisions.
 - Satisfaction score is computed as the mean of survey scores; consider showing the median and distribution for fuller context.
 
-## Suggested Enhancements
-
-- Add role-based dashboards for clinicians vs administrators.
-- Add trend forecasting for patient volumes.
-- Integrate hospital systems (HL7/FHIR) using a secure ETL pipeline (for real deployments).
-- Add export options for CSV/PDF reports.
 
 ## Credits
 
 - Built with Tableau
-- Synthetic data created for demonstration purposes
+- Synthetic data created for demonstration purposes (From Real World Fake Data)
 
-## License
-
-Choose a license for the repository (MIT recommended) and update this README and add a LICENSE file accordingly.
 
 ## Contact
 
